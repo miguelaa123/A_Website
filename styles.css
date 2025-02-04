@@ -1,0 +1,161 @@
+body {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+h1 {
+    color:aliceblue;
+    text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color:aliceblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#line2 {
+    margin-top: -10px;
+}
+.button-container {
+    text-align: center;
+}
+
+button {
+    background-color: firebrick;
+    color: aliceblue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+    visibility:hidden;
+}
+
+.fade-in {
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slide-up {
+    animation: slideUp 2s forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.small-button {
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.large-button {
+    padding: 20px 40px;
+    font-size: 20px;
+}
+
+.heart {
+    width: 50px;
+    height: 50px;
+    background: red;
+    transform: rotate(45deg);
+    position:absolute;
+    left: 200px;
+    top: 200px;
+}
+
+.heart .left {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: -25px;
+    top: 0px;
+}
+
+.heart .right {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    top: -25px;
+}
+
+#blurryPanel {
+    z-index: 1;
+    padding: 100px;
+    background: rgba(255, 154, 154, 0.1);
+    box-shadow: 0 8px 32px 0 pink;
+    -webkit-backdrop-filter: blur(10.5px);
+    backdrop-filter: blur(10.5px);
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .small-button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .large-button {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+}
