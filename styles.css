@@ -185,7 +185,8 @@ button {
 
     #happy-cat {
         width: 150px; /* Adjust the width of the cat */
-        transform: translate(0, 170px); /* Adjust the position of the cat */
+        height: auto;
+        transform: translate(0, 160px);
     }
 
 
