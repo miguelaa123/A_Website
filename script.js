@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.getElementById("buttons");
     const blurryPanel = document.getElementById("blurryPanel");
     const gifContainer = document.getElementById("gifContainer");
+    const happyCat = document.getElementById("happy-cat");
+    const heartContainer = document.getElementById("heartContainer");
 
     noButton.addEventListener("click", function() {
         noClickCount++;
@@ -60,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
             this.theta = Math.random() * Math.PI * 2;
             const heartEl = document.createElement("div");
             heartEl.classList.add("heart");
-            document.body.append(heartEl);
+            heartsContainer.appendChild(heartEl);
             const pinks = ["#ff748c", "#ff8da1", "#ffa7b6"];
             const color = pinks[parseInt(Math.random() * pinks.length)];
             heartEl.style.background = color;
@@ -144,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
         buttons.classList.add("hidden");
         gifContainer.classList.add("hidden");
         blurryPanel.classList.remove("hidden");
-        blurryPanel.style.display = "flex";
+        happyCat.classList.remove("noDisplay");
         document.body.style.overflow = "hidden";
     });
 });

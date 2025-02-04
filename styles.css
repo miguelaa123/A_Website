@@ -16,7 +16,7 @@ html, body {
 h1 {
     color:aliceblue;
     text-align: center;
-font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -24,6 +24,7 @@ h2 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 #line2 {
     margin-top: -10px;
@@ -100,7 +101,7 @@ button {
     height: 50px;
     background: red;
     transform: rotate(45deg);
-    position:absolute;
+    position: absolute;
     left: 200px;
     top: 200px;
 }
@@ -128,14 +129,13 @@ button {
 }
 
 #blurryPanel {
-    z-index: 1;
-    padding: 100px;
+    z-index: 2;
+    padding: 40px;
     background: rgba(255, 154, 154, 0.1);
     box-shadow: 0 8px 32px 0 pink;
     -webkit-backdrop-filter: blur(10.5px);
     backdrop-filter: blur(10.5px);
     border-radius: 20px;
-    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -145,6 +145,43 @@ button {
     transform: translate(-50%, -50%);
 }
 
-#gifContainer {
-    
+#blurryPanel h1, #blurryPanel h2 {
+    width: 80%;
+    margin:0 auto;
+    padding: 10px;
+}
+#happy-cat {
+    z-index: 1;
+    width: 200px;
+    height: auto;
+    position: fixed;
+    transform: translate(0, 300px);
+}
+
+.noDisplay {
+    display: none;
+}
+
+#heartsContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure it doesn't interfere with other interactions */
+    z-index: 1; /* Ensure it is below the blurryPanel */
+}
+
+@media (max-width: 600px) {
+    #blurryPanel {
+        width: 90%; /* Adjust the width to almost reach the edges */
+        padding: 20px; /* Adjust the padding as needed */
+        border-radius: 10px;
+    }
+
+    #blurryPanel h1, #blurryPanel h2 {
+        width: 100%; /* Make the h1 and h2 take up the full width */
+    }
+
+
 }
