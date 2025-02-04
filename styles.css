@@ -148,28 +148,3 @@ button {
 #gifContainer {
     
 }
-
-@media (max-width: 600px) {
-    body {
-        margin: 10px;
-    }
-
-    h1, h2 {
-        font-size: 1.5em;
-    }
-
-    button {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
-    .small-button {
-        padding: 5px 10px;
-        font-size: 10px;
-    }
-
-    .large-button {
-        padding: 15px 30px;
-        font-size: 18px;
-    }
-}
