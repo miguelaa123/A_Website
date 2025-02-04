@@ -183,5 +183,10 @@ button {
         width: 100%; /* Make the h1 and h2 take up the full width */
     }
 
+    #happy-cat {
+        width: 150px; /* Adjust the width of the cat */
+        transform: translate(0, 200px); /* Adjust the position of the cat */
+    }
+
 
 }
