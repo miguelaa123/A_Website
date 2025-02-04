@@ -172,6 +172,12 @@ button {
     z-index: 1; /* Ensure it is below the blurryPanel */
 }
 
+#gifContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 600px) {
     #blurryPanel {
         width: 90%; /* Adjust the width to almost reach the edges */
@@ -188,9 +194,11 @@ button {
         height: auto;
         transform: translate(0, 160px);
     }
+
     #gifContainer img{
-        max-width: 90%;
+        max-width: 30%;
         height:auto;
+        align-self: center;
     }
 
 }
