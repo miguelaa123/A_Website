@@ -104,3 +104,25 @@ hr {
         border-radius: 10px;
     }
 }
+
+@media (max-width: 390px) and (max-height: 844px) {
+    #blurryPanel {
+        width: 80%; /* Adjust the width to almost reach the edges */
+        padding: 15px; /* Adjust the padding as needed */
+        border-radius: 10px;
+    }
+    h1{
+        font-size: 1.4em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    ol{
+        font-size: 0.8em;
+    }
+
+
+}
