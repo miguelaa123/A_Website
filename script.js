@@ -17,26 +17,26 @@ document.addEventListener("DOMContentLoaded", function() {
         noClickCount++;
         if (noClickCount === 1) {
             const gif = document.createElement("img");
-            gif.src = "orange-cat-laughing.gif";
-            gif.alt = "orange cat laughing";
+            gif.src = "booo.jpg";
+            gif.alt = "booo tomato tomato";
             gifContainer.appendChild(gif);
-            alert("haha you funny. I'll give you another try :)");
+            alert("sooo you hate me? >:(");
             setTimeout(() => {
                 gifContainer.classList.add("hidden");
             }, 3000);
         } else if (noClickCount === 2) {
             
-            alert("nope. Look, I'll make it easier for you :)");
+            alert("righttt you already know where this goes. I know you want to");
             noButton.classList.add("small-button");
             yesButton.classList.add("large-button");
         } else if (noClickCount === 3) {
-            alert("you're not very good at this are you? :)");
+            alert("you shouldn't even be reading this :(");
         } else if (noClickCount === 4) {
             const sad = document.createElement("img");
             sad.src = "sad_cat.jpg";
             sad.alt = "very sad cat";
             gifContainer.replaceChild(sad, gifContainer.firstChild);
-            alert("I'll give you one more chance :)");
+            alert("this is your last chance but if you say yes then I will be haengbog");
             gifContainer.classList.remove("hidden");
             setTimeout(() => {
                 gifContainer.classList.add("hidden");
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
             thumbsUp.src = "thumbs_up.jpg";
             thumbsUp.alt = "thumbs up cat";
             gifContainer.replaceChild(thumbsUp, gifContainer.firstChild);
-            alert("I mean... ig if you really don't wanna, you at least have a Redbull :)")
+            alert("ughhh im still going to try again and again and again forever and ever and ever until you say yes <3")
             gifContainer.classList.remove("hidden");
             buttons.classList.add("hidden");
             line4.classList.add("hidden");
